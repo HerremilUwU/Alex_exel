@@ -1,0 +1,2330 @@
+{
+  "sheets": [
+    {
+      "properties": {
+        "sheetId": 0,
+        "title": "Form Responses 1",
+        "gridProperties": {
+          "rowCount": 1009,
+          "columnCount": 15
+        }
+      },
+      "data": [
+        {
+          "startRow": 1,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Timestamp"
+                  },
+                  "userEnteredFormat": {
+                    "numberFormat": {
+                      "type": "DATE_TIME"
+                    }
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Name"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Phone"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Company"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Job Title"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead Source"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead Status"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Amount"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Close Date"
+                  },
+                  "userEnteredFormat": {
+                    "numberFormat": {
+                      "type": "DATE"
+                    }
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Probability"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Owner"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Created Time"
+                  },
+                  "userEnteredFormat": {
+                    "numberFormat": {
+                      "type": "DATE_TIME"
+                    }
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Last Modified Time"
+                  },
+                  "userEnteredFormat": {
+                    "numberFormat": {
+                      "type": "DATE_TIME"
+                    }
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Tags"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 2,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-01 10:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "John Doe"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1234567890"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Example Corp"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Sales Manager"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Website"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "New"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "10000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-12-31"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "90"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Jane Smith"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-01 10:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-12-31 10:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Important"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 3,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-02 11:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example2@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mary Jane"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "0987654321"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Sample LLC"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Marketing Director"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Referral"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "In Progress"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "20000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-01-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "80"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "John Smith"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-02 11:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-01-01 11:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Follow Up"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 4,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-03 12:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example3@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "James Bond"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1122334455"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Bond Enterprises"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Agent"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cold Call"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Contacted"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "15000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-02-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "70"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Jane Doe"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-03 12:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-02-01 12:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Needs Analysis"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 5,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-04 13:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example4@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Bruce Wayne"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2233445566"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Wayne Enterprises"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "CEO"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Webinar"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "25000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-03-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "60"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Jim Gordon"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-04 13:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-03-01 13:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Proposal Sent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 6,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-05 14:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example5@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Clark Kent"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "3344556677"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Daily Planet"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Reporter"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Social Media"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Closed - Won"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "30000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-04-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "50"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lois Lane"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-05 14:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-04-01 14:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Negotiation"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 7,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-06 15:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example6@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Peter Parker"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "4455667788"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Parker Industries"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "CTO"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email Campaign"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Closed - Lost"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "35000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-05-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "40"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mary Jane"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-06 15:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-05-01 15:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Contract Sent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 8,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-07 16:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example7@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Wade Wilson"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "5566778899"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Weapon X"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mercenary"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Affiliate"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Negotiation"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "40000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-06-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "30"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Natasha Romanoff"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-07 16:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-06-01 16:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Lost"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 9,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-08 17:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example8@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Logan"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "6677889900"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "X-Men"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mutant"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Social Media"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Proposal Sent"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "45000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-07-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "20"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Ororo Munroe"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-08 17:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-07-01 17:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 10,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-09 18:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example9@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Diana Prince"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "7788990011"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Themyscira"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Warrior"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Direct Mail"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lost"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "50000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-08-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "10"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Steve Trevor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-09 18:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-08-01 18:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Recycled"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 11,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-10 19:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example10@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Clark Kent"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1011121314"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Daily Planet"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Editor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Webinar"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "55000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-09-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "5"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lois Lane"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-10 19:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-09-01 19:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Nurturing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 12,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-11 20:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example11@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Bruce Wayne"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1314151617"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Gotham City"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mayor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cold Call"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Contacted"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "60000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-10-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "0"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Alfred Pennyworth"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-11 20:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-10-01 20:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 13,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-12 21:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example12@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Peter Parker"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1617181920"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "New York"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Photographer"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email Campaign"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "70000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-11-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "100"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mary Jane"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-12 21:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-11-01 21:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Contract Sent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 14,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-13 22:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example13@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Wade Wilson"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2020212223"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Los Angeles"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Actor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Social Media"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Negotiation"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "80000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-12-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "90"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Natasha Romanoff"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-13 22:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2022-12-01 22:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Lost"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 15,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-14 23:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example14@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Logan"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2122232425"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "San Francisco"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mutant"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Webinar"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "90000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-01-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "80"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Ororo Munroe"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-14 23:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-01-01 23:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 16,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-15 00:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example15@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Diana Prince"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "3232323334"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Themyscira"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Warrior"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email Campaign"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "100000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-02-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "70"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Steve Trevor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-15 00:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-02-01 00:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Contract Sent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 17,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-16 01:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example16@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Bruce Wayne"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "4343434345"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Gotham City"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mayor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cold Call"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Contacted"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "110000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-03-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "60"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Alfred Pennyworth"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-16 01:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-03-01 01:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 18,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-17 02:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example17@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Peter Parker"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "5454545456"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "New York"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Photographer"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email Campaign"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "120000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-04-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "50"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mary Jane"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-17 02:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-04-01 02:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Contract Sent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 19,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-18 03:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example18@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Wade Wilson"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "6565656566"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Los Angeles"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Actor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Social Media"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Negotiation"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "130000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-05-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "40"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Natasha Romanoff"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-18 03:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-05-01 03:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Lost"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 20,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-19 04:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example19@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Logan"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "7676767678"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "San Francisco"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mutant"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Webinar"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "140000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-06-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "30"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Ororo Munroe"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-19 04:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-06-01 04:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 21,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-20 05:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example20@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Diana Prince"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "8787878789"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Themyscira"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Warrior"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email Campaign"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "150000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-07-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "20"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Steve Trevor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-20 05:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-07-01 05:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Contract Sent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 22,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-21 06:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example21@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Bruce Wayne"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "9898989890"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Gotham City"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mayor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cold Call"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Contacted"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "160000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-08-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "10"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Alfred Pennyworth"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-21 06:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-08-01 06:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 23,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-22 07:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example22@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Peter Parker"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1010101011"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "New York"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Photographer"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email Campaign"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "170000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-09-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "5"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mary Jane"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-22 07:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-09-01 07:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Nurturing"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 24,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-23 08:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example23@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Wade Wilson"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "1111111112"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Los Angeles"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Actor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Social Media"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Negotiation"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "180000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-10-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "0"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Natasha Romanoff"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-23 08:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-10-01 08:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Lost"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 25,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-24 09:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example24@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Logan"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2222222223"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "San Francisco"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mutant"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Webinar"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "190000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-11-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "10"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Ororo Munroe"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-24 09:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-11-01 09:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 26,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-25 10:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example25@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Diana Prince"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "3333333334"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Themyscira"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Warrior"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Email Campaign"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Qualified"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "200000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-12-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "20"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Steve Trevor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-25 10:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2023-12-01 10:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Contract Sent"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 27,
+          "startColumn": 1,
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-26 11:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "example26@email.com"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Bruce Wayne"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "4444444445"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Gotham City"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mayor"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cold Call"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Contacted"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "210000"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2024-01-01"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "30"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Alfred Pennyworth"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2021-01-26 11:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "2024-01-01 11:00:00"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Lead, Closed - Won"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "startRow": 28,
+          "startColumn": 1,
