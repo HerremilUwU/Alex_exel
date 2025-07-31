@@ -37,8 +37,8 @@ def get_german_day_timestamps():
     return int(start_of_day.timestamp()), int(end_of_day.timestamp())
 
 def get_day_matches(puuid, start_ts, end_ts, region=region_full):
-    url = f"https://{region}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?startTime={start_ts}&endTime={end_ts}&type=ranked&start=0&count=20&api_key={RIOT_API}"
-    #url = f"https://{region}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?startTime=1753567200&endTime=1753653599&type=ranked&start=0&count=20&api_key={RIOT_API}"
+    #url = f"https://{region}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?startTime={start_ts}&endTime={end_ts}&type=ranked&start=0&count=20&api_key={RIOT_API}"
+    url = f"https://{region}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?startTime=1753567200&endTime=1753653599&type=ranked&start=0&count=20&api_key={RIOT_API}"
     r = requests.get(url)
     return r.json() if r.status_code == 200 else []
 
@@ -92,10 +92,7 @@ def parse_sessions(match_data, puuid):
     if current:
         sessions.append(current)
     
-    # Original-Format für Zelle
     cell_values = []
-    
-    # Nur für Print: Totals berechnen
     totals_for_print = []
     
     for s in sessions:
@@ -103,53 +100,16 @@ def parse_sessions(match_data, puuid):
         losses = sum(1 for g in s if g['outcome'] == 'loss')
         afk_flag = '*' if any(g['afk'] for g in s) else ''
         
-        # Zellwert bleibt wie vorher
         cell_values.append(f"{wins}|{losses}{afk_flag}")
-        
-        # Nur für print – Total pro Session
         totals_for_print.append(wins + losses)
     
-    # Debug-Ausgabe mit Totals
     print("📊 Session Totals:", totals_for_print)
     
-    return ', '.join(cell_values)
+    session_summary = ', '.join(cell_values)
+    return session_summary, totals_for_print
 
-def session_color(match_data, puuid, totals_for_print):
-    # Diese Funktion könnte verwendet werden, um die Farben für die Sitzungen zu setzen
-    # Hier wird nur ein Beispiel gezeigt
-    if totals_for_print < 2 or totals_for_print > 5:
-        return {"red": 1, "green": 0.2, "blue": 0.2}
-    else:
-        return {"red": 0.2, "green": 1, "blue": 0.2}
-    return {
-        "requests": [
-            {
-                "addConditionalFormatRule": {
-                    "rule": {
-                        "ranges": [
-                            {
-                                "sheetId": 0,
-                                "startRowIndex": 0,
-                                "endRowIndex": 1,
-                                "startColumnIndex": 3,  # Spalte D
-                                "endColumnIndex": 4
-                            }
-                        ],
-                        "booleanRule": {
-                            "condition": {
-                                "type": "CUSTOM_FORMULA",
-                                "values": [
-                                    {"userEnteredValue": "=LEN(D1)>0"}
-                                ]
-                            },
-                            "format": {"backgroundColor": session_color(match_data, puuid, totals_for_print)}
-                        }
-                    },
-                    "index": 0
-                }
-            }
-        ]
-    }
+
+
 
 def get_day_wins(matches, puuid):
     return sum(1 for m in matches for p in m['info']['participants'] if p['puuid'] == puuid and p['win'])
@@ -248,7 +208,7 @@ def Weekday_color(row_index):
         color = {"red": 1, "green": 0.6, "blue": 0.2}  # Orange
     elif weekday in ["Sonntag"]:
         color = {"red": 0.5568627450980392, "green": 0.48627450980392156, "blue": 0.7647058823529411}  # Blau
-    else:
+    elif weekday in ["Montag", "Mittwoch", "Freitag", "Samstag"]:
         color = {"red": 0.8509803921568627, "green": 0.8235294117647058, "blue": 0.9137254901960784}  # Standardfarbe (Lila/Weiß)
 
     return {
@@ -280,6 +240,34 @@ def Weekday_color(row_index):
             }
         ]
     }
+def session_color(row_index, totals_for_print):
+    if any(t < 2 or t > 5 for t in totals_for_print):
+        color = {"red": red_red, "green": red_green, "blue": red_blue}
+    else:
+        color = {"red": green_red, "green": green_green, "blue": green_blue}
+
+    return {
+        "requests": [
+            {
+                "repeatCell": {
+                    "range": {
+                        "sheetId": 0,
+                        "startRowIndex": row_index,
+                        "endRowIndex": row_index + 1,
+                        "startColumnIndex": 3,  # D
+                        "endColumnIndex": 4
+                    },
+                    "cell": {
+                        "userEnteredFormat": {
+                            "backgroundColor": color
+                        }
+                    },
+                    "fields": "userEnteredFormat.backgroundColor"
+                }
+            }
+        ]
+    }
+
 def clear_row_background(service, row_index):
     clear_request = {
         "requests": [
@@ -368,40 +356,34 @@ def I_color(row_index):
 
 def color_golddiff_color(row_index, gold_diff):
     if gold_diff < 0:
-        color = {"red": 1, "green": 0.2, "blue": 0.2}  # Rot
-    elif gold_diff < 1000:
-        color = {"red": 1, "green": 1, "blue": 0}      # Gelb
+        color = {"red": red_red, "green": red_green, "blue": red_blue}  # Rot
+    elif gold_diff < 2000:
+        color = {"red": yellow_red, "green": yellow_green, "blue": yellow_blue}  # Gelb
     else:
-        color = {"red": 0.2, "green": 1, "blue": 0.2}  # Grün
+        color = {"red": green_red, "green": green_green, "blue": green_blue}  # Grün
+
     return {
         "requests": [
             {
-                "addConditionalFormatRule": {
-                    "rule": {
-                        "ranges": [
-                            {
-                                "sheetId": 0,
-                                "startRowIndex": row_index,
-                                "endRowIndex": row_index + 1,
-                                "startColumnIndex": 5, # Spalte F
-                                "endColumnIndex": 6
-                            }
-                        ],
-                        "booleanRule": {
-                            "condition": {
-                                "type": "CUSTOM_FORMULA",
-                                "values": [
-                                    {"userEnteredValue": "=LEN(F{})>0".format(row_index+1)}
-                                ]
-                            },
-                            "format": {"backgroundColor": color}
+                "repeatCell": {
+                    "range": {
+                        "sheetId": 0,
+                        "startRowIndex": row_index,
+                        "endRowIndex": row_index + 1,
+                        "startColumnIndex": 12,  # Spalte L
+                        "endColumnIndex": 13
+                    },
+                    "cell": {
+                        "userEnteredFormat": {
+                            "backgroundColor": color
                         }
                     },
-                    "index": 0
+                    "fields": "userEnteredFormat.backgroundColor"
                 }
             }
         ]
     }
+
 def JK(row_index):
     return {
         "requests": [
@@ -414,7 +396,7 @@ def JK(row_index):
                                 "startRowIndex": row_index,
                                 "endRowIndex": row_index + 1,
                                 "startColumnIndex": 9,  # Spalte J
-                                "endColumnIndex": 10
+                                "endColumnIndex": 11
                             }
                         ],
                         "booleanRule": {
@@ -426,6 +408,40 @@ def JK(row_index):
                                     "red": 0.8352941176470589,
                                     "green": 0.6509803921568628,
                                     "blue": 0.7411764705882353
+                                }
+                            }
+                        }
+                    },
+                    "index": 0
+                }
+            }
+        ]
+    }
+
+def N_color(row_index):
+    return {
+        "requests": [
+            {
+                "addConditionalFormatRule": {
+                    "rule": {
+                        "ranges": [
+                            {
+                                "sheetId": 0,
+                                "startRowIndex": row_index,
+                                "endRowIndex": row_index + 1,
+                                "startColumnIndex": 13,  # Spalte N
+                                "endColumnIndex": 14
+                            }
+                        ],
+                        "booleanRule": {
+                            "condition": {
+                                "type": "NOT_BLANK"  # Bedingung: Feld ist nicht leer
+                            },
+                            "format": {
+                                "backgroundColor": {
+                                    "red": 0.4,
+                                    "green": 0.4,
+                                    "blue": 0.4
                                 }
                             }
                         }
@@ -456,9 +472,9 @@ def E_color(row_index):
                             },
                             "format": {
                                 "backgroundColor": {
-                                    "red": 0.2,
-                                    "green": 0.2,
-                                    "blue": 1
+                                    "red": 0.788235294117647,
+                                    "green": 0.8549019607843137,
+                                    "blue": 0.9725490196078431
                                 }
                             }
                         }
@@ -507,10 +523,78 @@ def played_matches_color(row_index, matches):
             }
         ]
     }
+def B_color(row_index):
+    return {
+        "requests": [
+            {
+                "addConditionalFormatRule": {
+                    "rule": {
+                        "ranges": [
+                            {
+                                "sheetId": 0,
+                                "startRowIndex": row_index,
+                                "endRowIndex": row_index + 1,
+                                "startColumnIndex": 1,  # Spalte B
+                                "endColumnIndex": 2
+                            }
+                        ],
+                        "booleanRule": {
+                            "condition": {
+                                "type": "NOT_BLANK"  # Bedingung: Feld ist nicht leer
+                            },
+                            "format": {
+                                "backgroundColor": {
+                                    "red": 0.058823529411764705,
+                                    "green": 0.403921568627451,
+                                    "blue": 0.2627450980392157
+                                }
+                            }
+                        }
+                    },
+                    "index": 0
+                }
+            }
+        ]
+    }
+def cs_diff_color(row_index, cs_diff):
+    if cs_diff < 0:
+        color = {"red": red_red, "green": red_green, "blue": red_blue}  # Rot
+    elif cs_diff < 100:
+        color = {"red": yellow_red, "green": yellow_green, "blue": yellow_green}      # Gelb
+    else:
+        color = {"red": 0.2, "green": 1, "blue": 0.2}  # Grün
+    return {
+        "requests": [
+            {
+                "addConditionalFormatRule": {
+                    "rule": {
+                        "ranges": [
+                            {
+                                "sheetId": 0,
+                                "startRowIndex": row_index,
+                                "endRowIndex": row_index + 1,
+                                "startColumnIndex": 11, # Spalte L
+                                "endColumnIndex": 12
+                            }
+                        ],
+                        "booleanRule": {
+                            "condition": {
+                                "type": "CUSTOM_FORMULA",
+                                "values": [
+                                    {"userEnteredValue": "=LEN(L{})>0".format(row_index+1)}
+                                ]
+                            },
+                            "format": {"backgroundColor": color}
+                        }
+                    },
+                    "index": 0
+                }
+            }
+        ]
+    }
 
 
-
-def update_or_append_sheet(service, today_str, session_summary, matches, match_data):
+def update_or_append_sheet(service, today_str, session_summary, totals_for_print, matches, match_data):
     sheet = service.spreadsheets()
     deaths = get_deaths_min12(match_data, puuid)  
     rows = sheet.values().get(
@@ -540,21 +624,21 @@ def update_or_append_sheet(service, today_str, session_summary, matches, match_d
     cs_diff_avg = cs_diff.get("avg_cs_diff", "") if cs_diff else ""
     cs_diff_count = cs_diff.get("count", "") if cs_diff else ""
     cs_diff_gold = cs_diff.get("avg_gold_diff", "") if cs_diff else ""
-
     values = [
         today_str,
         q_type_value,
         len(matches),
         session_summary,
-        " ",
+        ". ",
         wins,
         g_value,
         champions,
         deaths,
-        " ",
-        " ",
+        ". ",
+        ". ",
         cs_diff_avg,
-        cs_diff_gold
+        cs_diff_gold,
+        ". "
     ]
 
     while len(values) < 26:
@@ -572,7 +656,13 @@ def update_or_append_sheet(service, today_str, session_summary, matches, match_d
         ).execute()
         print(f"🔁 Zeile {row_index+1} aktualisiert.")
         # Formatierungsregeln anwenden
-        
+        cs_diff_rules = cs_diff_color(row_index, cs_diff_avg)
+        if cs_diff_rules:
+            service.spreadsheets().batchUpdate(
+                spreadsheetId=SPREADSHEET_ID,
+                body=cs_diff_rules
+            ).execute()
+
         E_color_rules = E_color(row_index)
         if E_color_rules:
             service.spreadsheets().batchUpdate(
@@ -584,13 +674,19 @@ def update_or_append_sheet(service, today_str, session_summary, matches, match_d
             spreadsheetId=SPREADSHEET_ID,
             body=champion2_color_rules
         ).execute()
-
+        # B_color anwenden
+        b_color_rules = B_color(row_index)
+        service.spreadsheets().batchUpdate(
+            spreadsheetId=SPREADSHEET_ID,
+            body=b_color_rules
+        ).execute()
         # Gold-Diff-Farbe anwenden
-        if g_value != "":
-            gold_diff_color_rules = color_golddiff_color(row_index, g_value)
+        gold_diff_rules = color_golddiff_color(row_index, cs_diff_gold)
+        if cs_diff_gold is not None:
+            gold_diff_rules = color_golddiff_color(row_index, cs_diff_gold)
             service.spreadsheets().batchUpdate(
                 spreadsheetId=SPREADSHEET_ID,
-                body=gold_diff_color_rules
+                body=gold_diff_rules
             ).execute()
 
         # H_color anwenden
@@ -599,7 +695,12 @@ def update_or_append_sheet(service, today_str, session_summary, matches, match_d
             spreadsheetId=SPREADSHEET_ID,
             body=h_color_rules
         ).execute()
-
+        # N_color anwenden
+        n_color_rules = N_color(row_index)
+        service.spreadsheets().batchUpdate(
+            spreadsheetId=SPREADSHEET_ID,
+            body=n_color_rules
+        ).execute()
         # Farben anwenden
         dodi_rules = Weekday_color(row_index)
         if dodi_rules:
@@ -621,6 +722,13 @@ def update_or_append_sheet(service, today_str, session_summary, matches, match_d
                 spreadsheetId=SPREADSHEET_ID,
                 body=jk_rules
             ).execute()
+        session_color_rules = session_color(row_index, totals_for_print)
+
+        service.spreadsheets().batchUpdate(
+            spreadsheetId=SPREADSHEET_ID,
+            body=session_color_rules
+        ).execute()
+
     else:
         # 🚀 Neue Zeile anhängen
         sheet.values().append(
@@ -653,9 +761,10 @@ while True:
     
     if matches:
         match_data = get_matchdata_day(puuid, matches)
-        session_summary = parse_sessions(match_data, puuid)
+        session_summary, totals_for_print = parse_sessions(match_data, puuid)
         today_str = datetime.datetime.now().strftime("%d-%B")
-        update_or_append_sheet(service, today_str, session_summary, matches, match_data)
+        update_or_append_sheet(service, today_str, session_summary, totals_for_print, matches, match_data)
+
     else:
         print("ℹ️ Keine Ranked-Spiele heute.")
 
