@@ -1,45 +1,36 @@
-from google.oauth2 import service_account
-from googleapiclient.discovery import build
-import json
-import sys
-import datetime
+#ᓚᘏᗢ✮⋆˙✮ ⋆ ⭒˚｡⋆
+import requests
 
-CONFIG_DIR = "C:\\Users\\gamin\\OneDrive\\Dokumente"
-if CONFIG_DIR not in sys.path:
-    sys.path.append(CONFIG_DIR)
+RIOT_API_KEY = "RGAPI-2dd294d1-1c00-4055-9023-1ae7ea840f00"
+REGION = "euw1"  # Für EUW1
 
-try:
-    import config_alex  # pyright: ignore[reportMissingImports]
-except ImportError:
-    print("❌ Konfigurationsdatei 'config_alex.py' nicht gefunden!")
-    exit()
-# === Google API einrichten ===
-SERVICE_ACCOUNT_FILE = config_alex.SERVICE_ACCOUNT_FILE
-SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
-SPREADSHEET_ID = config_alex.SPREADSHEET_ID
+def get_challenger_cutoff():
+    url = f"https://{REGION}.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5"
+    headers = {"X-Riot-Token": RIOT_API_KEY}
+    r = requests.get(url, headers=headers)
+    r.raise_for_status()
+    data = r.json()
+    entries = data.get("entries", [])
+    # Finde niedrigste LP unter allen Challenger-Spielern
+    if entries:
+        lowest_lp = min(player["leaguePoints"] for player in entries)
+        return lowest_lp
+    else:
+        return None
 
-creds = service_account.Credentials.from_service_account_file(
-    SERVICE_ACCOUNT_FILE, scopes=SCOPES
-)
-service = build("sheets", "v4", credentials=creds)
-
-# === Formatierungsregeln abrufen ===
-spreadsheet = service.spreadsheets().get(
-    spreadsheetId=SPREADSHEET_ID,
-    fields="sheets(properties(sheetId,title),conditionalFormats)"
-).execute()
-
-print(json.dumps(spreadsheet, indent=2))
-
-# Beispiel: Ermitteln ob heute Dienstag oder Donnerstag ist
-today = datetime.datetime.now()
-weekday = today.strftime("%A")  # Gibt z.B. "Tuesday" oder "Thursday" zurück
-
-if weekday in ["Tuesday", "Thursday"]:
-    # Style-Code aktivieren (hier nur Beispielausgabe)
-    print("🔶 Heute ist Dienstag oder Donnerstag! Style-Code aktivieren.")
-    # Hier könntest du z.B. eine Funktion aufrufen:
-    # apply_special_style(service, SPREADSHEET_ID)
-else:
-    print("ℹ️ Heute ist kein Dienstag oder Donnerstag.")
-
+def get_grandmaster_cutoff():
+    url = f"https://{REGION}.api.riotgames.com/lol/league/v4/grandmasterleagues/by-queue/RANKED_SOLO_5x5"
+    headers = {"X-Riot-Token": RIOT_API_KEY}
+    r = requests.get(url, headers=headers)
+    r.raise_for_status()
+    data = r.json()
+    entries = data.get("entries", [])
+    if entries:
+        lowest_lp = min(player["leaguePoints"] for player in entries)
+        return lowest_lp
+    else:
+        return None
+if __name__ == "__main__":
+    cutoff = get_challenger_cutoff()
+    print(f"Challenger Cutoff LP: {cutoff}")
+    print(f"Grandmaster Cutoff LP: {get_grandmaster_cutoff()}")

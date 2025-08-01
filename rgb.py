@@ -1,3 +1,4 @@
+#ᓚᘏᗢ✮⋆˙✮ ⋆ ⭒˚｡⋆
 def hex_to_rgb01(hex_color: str):
     # Falls ein führendes "#" vorhanden ist, entfernen
     hex_color = hex_color.lstrip('#')
